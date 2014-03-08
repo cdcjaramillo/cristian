@@ -11,6 +11,29 @@ body
 	font-size: 16px;
 
 }
+footer
+{
+	background: #22BCE0;
+	color: rgba(255,255,255,0.7);
+	padding: 1em; 
+	text-align: center;
+}
+footer p:first-child
+{
+	margin-bottom: 0;
+}
+footer p:last-child
+{
+	margin-top: 0;
+}
+footer p:last-child:after
+{
+	content: " -";
+}
+footer p:last-child:before
+{
+	content: "- ";
+}
 header
 {
 	background: #344B54;
@@ -39,7 +62,6 @@ header #avatar
 }
 header #avatar img 
 {
-	
 	border-radius: 50%;
 	width: 52px;
 }
@@ -52,7 +74,7 @@ header #logo img
 }
 nav
 {
-	background: #888CA3;
+	background: #80BCA3;
 	position: relative;
 }
 nav ul
@@ -75,10 +97,37 @@ nav ul li a
 }
 nav ul #publicar_nav
 {
+	position: absolute;
+	top: -0.2em;
+	right: 0;
+}
+nav ul #publicar_nav a
+{
 	background: #22BCE0;
 	border-radius: 5px;
-	padding: 0.8em 0.5em;
-	position: absolute;
-	top: 0;
-	right: 0;
+	box-shadow: rgba(0,0,0,0.5) 5px 5px 20px;
+	font-style: italic;
+	padding: 0.8em 0.8em;
+	text-shadow:rgba(0,0,0,0.5) 2px 2px 5px;
+}
+#contenido
+{
+	margin: 2em;
+	background: white;
+	border-bottom: 3px solid #22BCE0;
+	min-height: 128px;
+}
+#contenido.item 
+{
+	background: red;
+	border-bottom: 3px solid #22BCE0;
+	min-height: 128px;
+}
+#contenido .item .imagen_item
+{
+	float: left;
+}
+#contenido .item .imagen_item img
+{
+	width: 96px;
 }
